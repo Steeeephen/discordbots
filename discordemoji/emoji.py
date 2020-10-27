@@ -32,7 +32,13 @@ async def on_message(message):
       await message.guild.create_custom_emoji(name = emoji_name, image = img_byte)
     # with open("pic1.png", 'rb') as fd:
     #   await message.guild.create_custom_emoji(name='my_emoji', image=fd.read())
+  else:
+    print("ok")
+    print(message.author)
+    if(message.author.id == 399630387917225984):
 
-
+      await message.channel.send("hahahahaha")
+    # names[message.content.split(' ')[1]] = message.author.id
+    # print(names)
 
 client.run(TOKEN)
