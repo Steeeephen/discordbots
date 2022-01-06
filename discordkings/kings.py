@@ -97,7 +97,5 @@ async def on_message(message):
   if message.content.startswith('$name'):
     await message.channel.send("%s is %s" % (message.author, message.content.split(' ')[1]))
     names[message.content.split(' ')[1]] = message.author.id
-    print(names)
-    
 
 client.run(TOKEN)
